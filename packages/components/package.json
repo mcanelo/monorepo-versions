@@ -14,11 +14,25 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "auto-changelog": "^2.4.0",
     "commitizen": "^4.3.0",
     "cz-customizable": "^7.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.5"
+  },
+  "auto-changelog": {
+    "commitLimit": false,
+    "template": "changelog-template.hbs",
+    "commitUrl": "https://github.com/mcanelo/monorepo-versions/commit/{id}",
+    "compareUrl": "https://github.com/mcanelo/monorepo-versions/commit/{from}{to}",
+    "replaceText": {
+      "🐛|🧩|✅|🧑‍💻|♻️|⚡️|‼️|📝|⚙️|feat|fix|docs|perf|refactor|test|maintenance": "",
+      "Merged PR \\d*:": "",
+      "(\\d{6})": "[$1](https://melainvento.com)",
+      " : ": "",
+      "^\\s+": ""
+    }
   },
   "config": {
     "commitizen": {

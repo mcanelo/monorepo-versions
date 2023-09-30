@@ -1,14 +1,15 @@
 {
   "name": "components",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "changelog": "auto-changelog --commit-limit false --unreleased --package --template ./changelog-template.hbs && git add CHANGELOG.md",
     "commit": "git-cz",
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "version": "lerna version"
   },
   "dependencies": {
     "vue": "^3.3.4"

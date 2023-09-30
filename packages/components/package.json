@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "changelog": "auto-changelog --commit-limit false --unreleased --package --template ./changelog-template.hbs && git add CHANGELOG.md",
     "commit": "git-cz",
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -27,8 +28,8 @@
     "commitUrl": "https://github.com/mcanelo/monorepo-versions/commit/{id}",
     "compareUrl": "https://github.com/mcanelo/monorepo-versions/commit/{from}{to}",
     "replaceText": {
-      "🐛|🧩|✅|🧑‍💻|♻️|⚡️|‼️|📝|⚙️|feat|fix|docs|perf|refactor|test|maintenance": "",
-      "Merged PR \\d*:": "",
+      "feat|fix": "",
+      "Merge pull request \\d*:": "",
       "(\\d{6})": "[$1](https://melainvento.com)",
       " : ": "",
       "^\\s+": ""

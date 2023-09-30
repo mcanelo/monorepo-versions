@@ -30,7 +30,7 @@ message='Breaking change'
 {{#commit-list
 commits
 heading='### 🧩 Features'
-message='(?=.*(🧩))(?=.*Merged)'
+message='(?=.*feat)(?=.*Merged)'
 exclude='(Breaking change)'
 }}
 - {{subject}} [`{{shorthash}}`]({{href}})
@@ -39,7 +39,7 @@ exclude='(Breaking change)'
 {{#commit-list
 commits
 heading='### 🐛 Fixes'
-message='(?=.*(🐛))(?=.*Merged)'
+message='(?=.*fix)(?=.*Merged)'
 exclude='Breaking change'
 }}
 - {{subject}} [`{{shorthash}}`]({{href}})

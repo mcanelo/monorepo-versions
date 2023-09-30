@@ -1,7 +1,7 @@
 ### Changelog @monorepo-versions/components
 ​
 
-## 0.1.0
+## 0.2.0
 
 > 30 September 2023
 

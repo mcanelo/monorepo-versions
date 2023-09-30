@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "changelog": "auto-changelog --unreleased --package git add CHANGELOG.md",
+    "commit": "git-cz",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"

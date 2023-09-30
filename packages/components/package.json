@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "release": "lerna version"
+    "release": "lerna version npx autochangelog"
   },
   "dependencies": {
     "vue": "^3.3.4"

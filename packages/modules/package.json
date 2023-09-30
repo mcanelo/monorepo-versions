@@ -4,7 +4,7 @@
   "version": "0.2.0",
   "type": "module",
   "scripts": {
-    "changelog": "auto-changelog --unreleased --package git add CHANGELOG.md",
+    "changelog": "auto-changelog --commit-limit false --unreleased --package --template ./changelog-template.hbs && git add CHANGELOG.md",
     "commit": "git-cz",
     "dev": "vite",
     "build": "tsc && vite build",

@@ -28,7 +28,7 @@
     "commitUrl": "https://github.com/mcanelo/monorepo-versions/commit/{id}",
     "compareUrl": "https://github.com/mcanelo/monorepo-versions/commit/{from}{to}",
     "replaceText": {
-      "feat|fix": "",
+      "feat|fix|feat(components)": "",
       "Merge pull request \\d*:": "",
       "(\\d{6})": "[$1](https://melainvento.com)",
       " : ": "",
